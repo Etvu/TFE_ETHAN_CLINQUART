@@ -1,0 +1,41 @@
+summary {
+    display: flex;
+    align-items: center;
+    background-color: blueviolet;
+    padding-left: 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 15px;
+    color: white;
+  }
+summary:hover{
+    background-color: rgb(152, 73, 227);
+}
+details {
+    background-color: white;
+    color: black;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+.questions_reponses p {
+    background-color: white;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    padding-top: 20px;
+}   
+.accordion_green summary{
+    background-color: rgb(26, 142, 26);
+}
+.accordion_green summary:hover{
+    background-color: rgb(32, 169, 32);
+}
+.accordion_green p{
+    background-color: rgb(40, 208, 40);
+}
+.container{
+    width: 90vw;
+    margin: auto;
+}

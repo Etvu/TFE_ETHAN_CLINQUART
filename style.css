@@ -1,0 +1,68 @@
+#content {
+  opacity: 1;
+  transition: opacity .25s ease;
+  will-change: opacity;          /* (facultatif, un poil plus smooth) */
+}
+/* ancien contenu : fade out */
+#content.htmx-swapping {
+  opacity: 0;
+}
+
+/* nouveau contenu injecté : démarre transparent */
+#content.htmx-added {
+  opacity: 0;
+}
+
+/* phase de "settle" : revient à 1 */
+#content.htmx-settling {
+  opacity: 1;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+.ticket{
+    width: 250px;
+    border: 2px solid blueviolet;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.ticket a{
+    display: flex;             
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    text-decoration: none;
+    color: blueviolet;
+}
+.ticket a:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.ticket_b{
+    width: 250px;
+    border: 2px solid white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.ticket_b a{
+    display: flex;             
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    text-decoration: none;
+    color: blueviolet;
+}
+.ticket_b a:hover{
+    background-color: blueviolet;
+    color: white;
+}

@@ -1,0 +1,77 @@
+.reservation{
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    padding: 40px 24px;
+
+}
+
+/* Titre */
+.reservation h2{
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 18px;
+    color: blueviolet;
+}
+
+/* Formulaire */
+.booking-form{
+    display:flex;
+    flex-direction:column;
+    gap: 12px;
+    width: 350px;       
+}
+
+.booking-form label{
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.booking-form input{
+    height: 44px;
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 1.05rem;
+    border: 1px solid #e8e8e8;
+    border-radius: 2px;
+    background: #fff;
+    outline: none;
+    transition: box-shadow .15s ease, border-color .15s ease;
+}
+
+
+/* Bouton encadré */
+button{
+    height: 60px;
+    width: 370px;
+    margin-top: 10px;
+    font-size: 1.35rem;
+    font-weight: 700;
+    background-color: blueviolet;   
+    border: 1px solid blueviolet;
+    cursor: pointer;
+    transition: background .15s ease, color .15s ease, transform .02s ease;
+    color: white;
+}
+button:hover{
+    background-color: white;
+    color: blueviolet;
+}
+
+/* Message succès */
+.notice.success{
+    margin-top: 14px;
+    font-size: .95rem;
+}
+
+@media only screen and (max-width: 500px) {
+    .reservation form{
+        width: 100%;
+    }
+    .reservation button{
+        width: 100%;
+    }
+}
